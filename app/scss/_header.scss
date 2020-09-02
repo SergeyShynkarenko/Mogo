@@ -1,0 +1,41 @@
+.header {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+
+	&__inner {
+		display: flex;
+		// justify-content: space-between;
+	}
+
+	&__logo {
+		font-size: 30px;
+		font-weight: 700;
+		color: #fff;
+	}
+
+	&__items {
+		text-transform: uppercase;
+		font-size: 14px;
+		display: flex;
+	}
+
+.header__item + .header__item {
+	margin-left: 55px;
+}
+
+	&__link {
+		color: #fff;
+		text-decoration: none;
+		transition: color .2s linear;
+		display: inline-block;
+		vertical-align: top;
+		&:hover {
+			color: #fce38a;
+			text-decoration: none;
+		}
+	}
+}

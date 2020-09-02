@@ -1,7 +1,7 @@
 // USER VARIABLES SECTION
 
 $accent: orange; // Accent Color
-$fontsize: 16px; // Body Font Size
+$fontsize: 15px; // Body Font Size
 $textcolor: #333; // Text Color
 $system: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
 $roboto: Roboto, sans-serif; // Roboto Font Family
@@ -52,11 +52,21 @@ input, textarea {
 }
 
 body {
+	margin: 0;
 	font-family: $roboto;
 	font-size: $fontsize;
 	min-width: 320px;
 	position: relative;
-	line-height: 1.65;
+	line-height: 1.6;
 	overflow-x: hidden;
 	color: $textcolor;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
 }
