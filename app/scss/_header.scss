@@ -5,10 +5,12 @@
 	left: 0;
 	right: 0;
 	z-index: 1000;
+	padding-top: 30px;
 
 	&__inner {
 		display: flex;
-		// justify-content: space-between;
+		justify-content: space-between;
+		align-items: center;
 	}
 
 	&__logo {
@@ -21,21 +23,43 @@
 		text-transform: uppercase;
 		font-size: 14px;
 		display: flex;
+		list-style: none;
+		padding: 0;
 	}
-
-.header__item + .header__item {
-	margin-left: 55px;
-}
-
 	&__link {
 		color: #fff;
 		text-decoration: none;
 		transition: color .2s linear;
 		display: inline-block;
 		vertical-align: top;
+		position: relative;
+		&.active{
+			color: #fce38a;
+			opacity: 1;
+		}
 		&:hover {
 			color: #fce38a;
 			text-decoration: none;
+			&::after {
+				opacity: 1;
+			}
+		}
+		&::after {
+			content: "" ;
+			display: block;
+			width: 100%;
+			height: 3px;
+			background-color: #fce38a;
+			opacity: 0;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			z-index: 1;
+			transition: opacity .1s linear;
 		}
 	}
+}
+
+.header__item + .header__item {
+	margin-left: 55px;
 }
