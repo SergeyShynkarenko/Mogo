@@ -1,4 +1,9 @@
 .design {
+	padding-top: 80px;
+	background-image: url('../images/dest/bg.jpg');
+	background-size: cover;
+	background-repeat: norepeat;
+	background-position: center;
 	&__header {
 		width: 100%;
 		max-width: 950px;
@@ -13,4 +18,19 @@
 		margin: 30px auto 30px;
 		background-color: #f38181;
 	}	
+}
+.devices {
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	position: relative;
+	&__item {
+		display: block;
+	}
+	&__item--phone {
+		position: absolute;
+		bottom: -95px;
+		right: 0;
+		z-index: 1;
+	}
 }
