@@ -76,3 +76,22 @@ a {
 	padding: 0;
 
 }
+.title {
+	font-size: 30px;
+	font-weight: 700;
+	color: #333;
+	text-transform: uppercase;
+}
+.suptitle {
+	font-size: 24px;
+	color: #333;
+}
+
+hr {
+	display: block;
+	border: 0;
+	height: 1px;
+	width: 100%;
+	background-color: #e5e5e5;
+	margin: 40px 0;
+}

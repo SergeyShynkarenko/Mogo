@@ -1,0 +1,39 @@
+.services {
+	&__header {
+		text-align: center;
+		margin: 0 auto 50px;
+	}
+	&__title::after {
+		content: '';
+		display: block;
+		width: 60px;
+		height: 3px;
+		margin: 30px auto 30px;
+		background-color: #f38181;
+	}
+	&__items {
+		display: flex;
+	}
+	&__item {
+		flex: 1 1 0;
+		padding-left: 85px;
+		padding-right: 35px;
+		position: relative;
+		&-img {
+			position: absolute;
+			top: 0;
+			left: 28px;
+			z-index: 1;
+		}
+		&-title {
+			margin-bottom: 10px;
+			font-size: 14px;
+			color: #333;
+			text-transform: uppercase;
+		}
+		&-text {
+			font-size: 15px;
+			color: #999;
+		}
+	}
+}
