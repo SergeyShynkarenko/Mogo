@@ -81,6 +81,14 @@ a {
 	font-weight: 700;
 	color: #333;
 	text-transform: uppercase;
+		&::after {
+		content: '';
+		display: block;
+		width: 60px;
+		height: 3px;
+		margin: 30px auto 30px;
+		background-color: #f38181;
+	}
 }
 .suptitle {
 	font-size: 24px;

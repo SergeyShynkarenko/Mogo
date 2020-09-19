@@ -1,4 +1,11 @@
 .wedo {
+	padding: 110px 0 0;
+	&__header {
+		width: 100%;
+		max-width: 950px;
+		margin: 0 auto 40px;
+		text-align: center;
+	}
 	&__inner {
 		display: flex;
 	}

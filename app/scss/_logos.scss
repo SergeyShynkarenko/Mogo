@@ -1,0 +1,12 @@
+.logos {
+	margin-top: 30px;
+	background-color: #f8f8f8;
+	height: 250px;
+	width: 100%;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		height: 250px;
+		align-items: center;
+	}
+}

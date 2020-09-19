@@ -1,8 +1,8 @@
 .reviews {
-	padding: 0 110px;
+	padding: 110px 110px;
 	position: relative;
 	&__item {
-		padding-left: 205px;
+		padding-left: 255px;
 		position: relative;
 	}
 	&__photo {
@@ -10,6 +10,14 @@
 		top: 0;
 		left: 0;
 		z-index: 1;
+		border: 2px solid #95e1d3;
+		padding: 50px;
+	}
+	&__img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		border-radius: 50%;
 		border: 2px solid #95e1d3;
 	}
 	&__text {
