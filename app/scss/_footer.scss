@@ -1,0 +1,157 @@
+.footer {
+	padding-top: 65px;
+	background-color: #f8f8f8;
+	&__inner {
+		padding-bottom: 65px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__col--first {
+		width: 40%;
+	}
+	&__col--second {
+		width: 29%;
+	}
+	&__col--third {
+		width: 22%;
+	}
+	&__logo {
+		margin-bottom: 30px;
+		color: #ccc;
+		font-weight: 700;
+		font-size: 46px;
+	}
+	&__text {
+		font-size: 15px;
+		color: #999;
+		margin-bottom: 30px;
+	}
+	&__social {
+		margin-bottom: 25px;
+		&-header {
+			font-size: 14px;
+			color: #000;
+			border-bottom: 1px solid #e5e5e5;
+			padding-bottom: 15px;
+			b {
+				font-size: 18px;
+			}
+		}
+		&-content {
+			padding-top: 15px;
+			font-size: 15px;
+			color: #999;
+			font-weight: 300;
+			a {
+				display: inline-block;
+				vertical-align: middle;
+				margin-left: 10px;
+				color: #95e1d3;
+				font-size: 18px;
+			}
+		}
+	}
+	&__title {
+		margin: 30px 0;
+		font-size: 14px;
+		color: #333;
+		text-transform: uppercase;
+	}	
+}
+.subcribe {
+	width: 100%;
+	max-width: 380px;
+	display: flex;
+	&__input {
+		width: 60%;
+		padding: 12px;
+		height: 40px;
+		background: #fff;
+		border: 1px solid #e7e7e7;
+		font-size: 15px;
+		color: #000;
+		font-weight: 300;
+		line-height: 1.1;
+		border-right: 0;
+		&::placeholder {
+			color: #ccc;
+		}
+		&:focus {
+			outline: 0;
+			border-color: #95e1d3;
+		}
+	}
+	&__btn {
+		width: 40%;
+		padding: 12px 30px;
+		line-height: 1.1;
+		height: 40px;
+		background-color: #95e1d3;
+		border: 0;
+		cursor: pointer;
+		font-size: 14px;
+		font-weight: 700;
+		color: #fff;
+		text-transform: uppercase;
+		transition: background .2s linear;
+		&:hover {
+			background-color: #74c7d8;
+		}
+		&:focus {
+			outline: 0;
+		}
+	}
+}
+.blogs {
+	&__item {
+		display: flex;
+		margin-bottom: 30px;
+		align-items: center;
+	}
+	&__img {
+		width: 120px;
+		height: 80px;
+	}
+	&__content {
+		padding-left: 20px;
+	}
+	&__title {
+		display: block;
+		margin-bottom: 5px;
+		color: #333;
+		font-size: 12px;
+		text-transform: uppercase;
+		text-decoration: none;
+		line-height: 1.5;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	&__date {
+		font-size: 13px;
+		color: #999;
+		font-weight: 300;
+	}
+}
+.instagram {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	&__item {
+		width: 32.33333%;
+		border-bottom: 1px solid #fff;
+		img {
+			display: block;
+		}
+	}
+}
+.copyright {
+	padding: 20px 0;
+	border-top: 1px solid #e5e5e5;
+	text-align: center;
+	color: #333;
+	font-size: 14px;
+	span {
+		color: #f38181;
+	}
+}
